@@ -1,0 +1,21 @@
+.Title {
+    text-align: center;
+}
+
+.Basic {
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.Description {
+    text-align: center;
+}
+
+.Contact {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    border: 1px solid black;
+    padding: 20px;
+}
