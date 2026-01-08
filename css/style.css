@@ -19,3 +19,38 @@
     border: 1px solid black;
     padding: 20px;
 }
+
+.Navigation {
+    display: flex;
+    justify-content: space-around;  /* spreads buttons evenly */
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: sticky;  /* stays at top when scrolling */
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.Navigation a {
+    flex: 1;  /* makes all buttons equal width */
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s;
+    border-right: 1px solid #555;  /* divider between buttons */
+}
+
+.Navigation a:last-child {
+    border-right: none;  /* remove border on last button */
+}
+
+.Navigation a:hover{
+    background-color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
