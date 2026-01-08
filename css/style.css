@@ -20,6 +20,10 @@
     padding: 20px;
 }
 
+.SubTitle {
+    text-align: center;
+}
+
 .Navigation {
     display: flex;
     justify-content: space-around;  /* spreads buttons evenly */
