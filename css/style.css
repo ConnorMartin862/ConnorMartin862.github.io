@@ -3,9 +3,12 @@
 }
 
 .Basic {
-    text-align: center;
-    border: 1px solid black;
-    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .Description {
@@ -19,8 +22,11 @@
 .Writing {
     text-align: center;
     max-width: 800px;
-    margin: 20px auto;  /* centers the Writing boxes */
+    margin: 20px auto;
     padding: 20px;
+    background-color: #f5f5f5;  /* light gray background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .Navigation {
@@ -71,9 +77,17 @@
     padding: 20px;
 }
 
-.Contact h2, .Contact h3 {
+.Contact h2 {
     margin: 0;
     color: white;
+    font-size: 1.5em;  /* larger than h3 */
+    align-self: center;  /* vertically centers it with the flex items */
+}
+
+.Contact h3 {
+    margin: 0;
+    color: white;
+    font-size: 1em;  /* normal size */
 }
 
 .Contact a {
@@ -89,4 +103,6 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
 }
