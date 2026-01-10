@@ -12,20 +12,15 @@
     text-align: center;
 }
 
-.Contact {
-    text-align: center;
-    display: flex;
-    gap: 20px;
-    border: 1px solid black;
-    padding: 20px;
-}
-
 .SubTitle {
     text-align: center;
 }
 
 .Writing {
     text-align: center;
+    max-width: 800px;
+    margin: 20px auto;  /* centers the Writing boxes */
+    padding: 20px;
 }
 
 .Navigation {
@@ -58,7 +53,7 @@
     background-color: #555;
 }
 
-.footer {
+.Footer {
     background-color: #333;
     color: white;
     padding: 30px 0;
@@ -68,25 +63,26 @@
     bottom: 0;
 }
 
-.footer-content {
+.Contact {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;  /* wraps on smaller screens */
+    gap: 20px;
+    border: 1px solid black;
+    padding: 20px;
 }
 
-.footer-content p {
+.Contact h2, .Contact h3 {
     margin: 0;
+    color: white;
 }
 
-.footer-content a {
-    color: #4a9eff;  /* light blue for links */
+.Contact a {
+    color: #4a9eff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer-content a:hover {
+.Contact a:hover {
     color: #6bb6ff;
 }
 
