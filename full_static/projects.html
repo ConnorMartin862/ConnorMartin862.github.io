@@ -5,15 +5,73 @@
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    <div class="Navigation">
+        <a href="index.html">Home</a>
+        <a href="full_static/projects.html">Projects</a>
+        <a href="full_static/achievements.html">Achievements</a>
+        <a href="full_static/education.html">Educaiton</a>
+        <a href="full_static/skills.html">Skills</a>
+    </div>
     <div class="SubTitle">
         <h1>Projects</h1>
     </div>
-    <div class="Navigation">
-        <a href="index.html">Home</a>
-        <a href="full_static/achievements.html">Achievements</a>
-        <a href="full_static/education.html">Educaiton</a>
-        <a href="full_static/projects.html">Projects</a>
-        <a href="full_static/skills.html">Skills</a>
+    <div class="Writing">
+        <p>Here is a list of all of the projects that I have coded. This is sorted by class/other circumstances and will be accompanied with a link to the github page (although most projects are done with my school and are therefore private), as well as a picture of that project.</p>
     </div>
+    <div class="Projects">
+        <h2>EECS 485 (Web Systems) Projects / Fall 2025</h2>
+        
+        <div class="Project">
+            <h3>Full-Stack Instagram Clone</h3>
+            <img src="images/project1.png" alt="Project screenshot">
+            <p class="languages">Python, JavaScript(React), SQL, HTML, CSS</p>
+            <ul class="description">
+                <li>Built a full-stack social media app with authentication, feed, posts, profiles, followers, explore, and comments.</li>
+                <li>Configured 7 RESTful API endpoints and 19 dynamic routes with 5 SQL tables for data and authorization.</li>
+                <li>Created React components for dynamic pages and static layouts, delivering fully functional features.</li>
+                <li>Collaborated in a 3-person team using Git/GitHub, conducting code reviews and coordinating tasks.</li>
+            </ul>
+        </div>
+
+        <div class="Project">
+            <h3>Multithreaded Distributed MapReduce Framework</h3>
+            <img src="images/project1.png" alt="Project screenshot">
+            <p class="languages">Python</p>
+            <ul class="description">
+                <li>Developed a multithreaded system utilizing 4 parallel threads to coordinate distributed tasks.</li>
+                <li>Engineered to handle 10+ concurrent worker nodes with stable throughput.</li>
+                <li>Worked in a team of three, contributing to registration and shutdown workflows for worker management.</li>
+                <li>Achieved sub-5-second processing times on benchmark datasets within a distributed MapReduce framework.</li>
+            </ul>
+        </div>
+
+        <div class="Project">
+            <h3>Search Engine With Distributed MapReduce Indexing</h3>
+            <h4> Example Input </h4>
+            <img src="../images/search_enginein1.png" alt="Search Engine Input">
+            <img src="../images/search_enginein2.png" alt="Search Engine Input">
+            <h4> Example Output </h4>
+            <img src="../images/search_engineout.png" alt="Search Engine Output">
+            <p class="languages">Python, SQL, HTML, CSS</p>
+            <ul class="description">
+                <li>Created a search engine using segmented inverted indexing generation using a 7-Stage MapReduce pipeline.</li>
+                <li>Implemented tf-idf text analyisis with PageRank link analyais to optimize search analysis for thousands of different pages.</li>
+                <li>Built a dynamic server-side web interface to handle user search queries and display search results.</li>
+                <li>Collaborated in a 3 person team to properly distribute workloads.</li>
+            </ul>
+        </div>
+    
+    <!-- Repeat for more projects -->
+    </div>
+
+    <footer class="Footer">
+        <div class="Contact">
+            <h2>Contact Info: </h2>
+            <h3>Phone: 1-810-728-1184</h3>
+            <h3>Email: connormartinxc23@gmail.com</h3>
+            <h3>Linkdin: <a href="https://linkedin.com/in/connormm"> Connor Martin </a></h3>
+            <h3>Github: <a href="https://github.com/ConnorMartin862"> ConnorMartin862 </a></h3>
+        </div>
+    </footer>
 </body>
 </html>
