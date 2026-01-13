@@ -227,6 +227,100 @@
     margin: 15px 0;
 }
 
+/* Education Page Styling */
+.Educations {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.Education {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.Education h3 {
+    color: #00274C;  /* U of M blue */
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.time {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.Education img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Relevant Classes Section */
+.Education > h4 {
+    color: #00274C;
+    border-bottom: 2px solid #FFCB05;  /* U of M maize */
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* Dropdown Styling */
+.semester-dropdown {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.semester-dropdown summary {
+    background-color: #00274C;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    list-style: none;  /* removes default arrow on some browsers */
+    transition: background-color 0.3s;
+}
+
+.semester-dropdown summary::-webkit-details-marker {
+    display: none;  /* removes default arrow */
+}
+
+.semester-dropdown summary::before {
+    content: "▶ ";  /* custom arrow */
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.semester-dropdown[open] summary::before {
+    transform: rotate(90deg);  /* rotate arrow when open */
+}
+
+.semester-dropdown summary:hover {
+    background-color: #003366;
+}
+
+/* Classes Lists */
+.classes {
+    padding: 20px 40px;
+    margin: 0;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
+
+.classes li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
 body {
     margin: 0;
     padding: 0;
