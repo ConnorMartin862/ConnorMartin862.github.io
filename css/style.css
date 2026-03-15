@@ -156,6 +156,8 @@
 .ProjectGrid img {
     width: 100%;
     object-fit: contain;
+    height: 500px;
+    background-color: #f0f0f0;
     border: 3px solid black;
     border-radius: 8px;
 }
