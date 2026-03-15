@@ -409,9 +409,10 @@
 .SBArray img {
     width: 300px;
     height: 200px;
-    object-fit: cover;   /* keeps images uniform without stretching */
+    object-fit: cover;
     border: 3px solid black;
     border-radius: 8px;
+    max-width: unset;  /* overrides .Project img */
 }
 
 /* Classes Lists */
