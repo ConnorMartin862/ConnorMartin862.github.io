@@ -370,6 +370,15 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
+.FrontImage {
+    text-align: center;  /* centers the image */
+}
+
+.FrontImage img {
+    border: 3px solid black;  /* width | style | color */
+    border-radius: 8px;        /* rounded corners (optional) */
+}
+
 /* Classes Lists */
 .classes {
     padding: 20px 40px;
