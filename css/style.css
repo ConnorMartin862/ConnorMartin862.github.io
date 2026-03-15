@@ -148,14 +148,15 @@
 
 .ProjectGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 250px 250px;
     gap: 10px;
     margin: 15px 0;
+    justify-content: center;
 }
 
 .ProjectGrid img {
     width: 100%;
-    max-height: 600px;
+    max-height: 400px;
     object-fit: scale-down;
     border: 3px solid black;
     border-radius: 8px;
