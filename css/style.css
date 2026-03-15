@@ -371,11 +371,12 @@
 }
 
 .FrontImage {
-    text-align: center;  /* centers the image */
+    display: flex;  /* centers the image */
+    justify-content: center;
 }
 
 .FrontImage img {
-    border: 3px solid black;  /* width | style | color */
+    border: 10px solid black;  /* width | style | color */
     border-radius: 8px;        /* rounded corners (optional) */
 }
 
