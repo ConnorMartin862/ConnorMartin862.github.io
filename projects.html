@@ -32,17 +32,27 @@
                     <img src="images/StudyBuddyPic_Classes.png" alt="SBclasses">
                 </div>
                 <ul class="description">
-                    <li>Built and deployed a full-stack mobile app that helps college students find suitable study partners.</li>
-                    <li>Configured 25+ REST API endpoints and 7 PostgreSQL tables supporting user information and social features.</li>
-                    <li>Established secure user authentication with PostgreSQL credential verification and client-side token storage.</li>
-                    <li>Deployed backend on Railway and frontend on Expo. Collaborated in a 3-person Agile team using GitHub.</li>
+                    <li>Built a full-stack mobile app with a live web version, helping college students find suitable study partners, complete with a user-report system and a published privacy policy.</li>
+                    <li>Designed a weekly schedule editor as a core interaction in the app, deployed with a Railway backend and an Expo frontend.</li>
+                    <li>Configured 25+ REST API endpoints and 7 PostgreSQL tables supporting user information and social features, with secure authentication via PostgreSQL credential verification and client-side token storage.</li>
+                    <li>Led a 4-person team, coordinating project structure and meeting cadence, running user interviews and feedback sessions with potential testers, and owning the final demo.</li>
                 </ul>
                 <a href="https://github.com/ConnorMartin862/StudyBuddy" class="link">View on Github</a>
             </div>
         </details>
 
         <details class="semester-dropdown">
-            <summary>Personal Projects — 3 Projects</summary>
+            <summary>Personal Projects — 4 Projects</summary>
+
+            <div class="Project">
+                <h3>Personal Finance Dashboard</h3>
+                <p class="languages">JavaScript (Node.js / React), C++, Python</p>
+                <ul class="description">
+                    <li>Designed and shipped a platform with 3 insight engines (anomaly detection, subscription price-creep detection, and category trend flagging) across 5 serverless API endpoints, with interactive drill-down from aggregate view to individual transactions.</li>
+                    <li>Engineered a C++ anomaly detection module (median/MAD-based outlier detection) and iterated through two failed approaches. The first was a JSON-string interface which created a bottleneck through parsing and unparsing the JSON string. The second was native Python dictionaries, which created a bottleneck through per-row object overhead. Finally, using numpy buffers to cross the Python/C++ boundary once per call instead of once per row worked, achieving a 7x speedup over Python-based implementations.</li>
+                    <li>Provisioned a serverless AWS backend (Lambda, API Gateway, DynamoDB, S3) with 100% Infrastructure as Code via SAM/CloudFormation.</li>
+                </ul>
+            </div>
 
             <div class="Project">
                 <h3>Shattered Continuum (Video Game) (IN BETA PRODUCTION)</h3>
@@ -52,9 +62,10 @@
 
                 <a href="https://shatteredcontinuum.netlify.app/" class="link">Play Right Now!</a>
                 <ul class="description">
-                    <li>Created a browser-based 2D-platformer with a procedural chunk-based level system.</li>
-                    <li>Engineered a system that destroys active physics objects on traversal for smoother gameplay.</li>
-                    <li>Architected 10 levels alongside random and max-difficulty modes, each with 4 independent feature rolls.</li>
+                    <li>Created a browser-based 2D-platformer with a procedural chunk-based level system, featuring a custom time-freeze mechanic with partial charge persistence.</li>
+                    <li>Engineered a physics-object cleanup system that destroys off-screen physics objects as the player traverses, fixing accumulation-driven performance issues and stabilizing gameplay at 30+ fps.</li>
+                    <li>Designed 10 levels alongside random and max-difficulty modes, each with 4 independent feature rolls, designed for replayability.</li>
+                    <li>Continued active development post-launch: recently replaced the placeholder character with a fully animated sprite featuring run and jump animations.</li>
                 </ul>
                 <a href="https://github.com/ConnorMartin862/Shattered-Continuum-Video-Game" class="link">View on Github</a>
             </div>
@@ -81,10 +92,9 @@
                 <h4>Model Output:</h4>
                 <img src="images/March_output.png" alt="Project screenshot">
                 <ul class="description">
-                    <li>Constructed a Python Linear Regression Model that predicted the best metrics to predict NCAA Men's Basketball Torunament Games</li>
-                    <li>Using the NCAA App's Bracket Autopick Feature weighing the metrics the same way as the model outputed, the following bracket predicted the first 11 games correct, the first 15/16, the first 28/32 with all Sweet 16 teams alive going into the second round.</li>
-                    <li>Utilized K-Fold Cross Validation and Feature Mapping.</li>
-                    <li>Could also print direct game predictions given team statistics.</li>
+                    <li>Built a logistic regression model predicting NCAA Tournament game outcomes, achieving 0.7835 AUROC.</li>
+                    <li>Engineered 18 custom features, including Massey rankings, momentum scoring, tournament experience, and an offensive collapse flag serving as an injury proxy.</li>
+                    <li>Trained on Kaggle's official 2003–2026 tournament dataset using 5-fold cross-validation and feature-weighted inputs.</li>
                 </ul>
                 <a href="https://github.com/ConnorMartin862/March-Madness-Model" class="link">View on Github</a>
             </div>
@@ -140,10 +150,9 @@
                 <h4>Example Output</h4>
                 <img src="/images/search_engineout.png" alt="Search Engine Output">
                 <ul class="description">
-                    <li>Created a search engine using segmented inverted indexing generation using a 7-Stage MapReduce pipeline.</li>
-                    <li>Implemented tf-idf text analysis with PageRank link analysis to optimize search analysis for thousands of different pages.</li>
-                    <li>Built a dynamic server-side web interface to handle user search queries and display search results.</li>
-                    <li>Collaborated in a 3 person team to properly distribute workloads.</li>
+                    <li>Developed a search engine over University of Michigan web pages, pairing it with a JavaScript frontend.</li>
+                    <li>Wrote tf-idf text analysis and a segmented 7-Stage MapReduce pipeline that can search 1000+ pages.</li>
+                    <li>Owned core implementation of the MapReduce pipeline, accounting for the majority of development effort.</li>
                 </ul>
             </div>
         </details>
